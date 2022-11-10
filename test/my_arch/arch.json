@@ -1,0 +1,16 @@
+{
+    "MyTestComponent1" : {
+        "type": "SWComponent",
+        "children": {
+            "MyTestComponent2" : {
+                "type": "SWComponent"
+            },
+            "MyTestComponent3" : {
+                "type": "SWComponent"
+            }
+        }
+    },
+    "WrongType" : {
+        "typ3": "SWComponent"
+    }
+}
