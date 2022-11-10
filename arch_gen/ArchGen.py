@@ -22,10 +22,12 @@ class ArchGen():
                 genClassInstance = self._types.get(type)
                 if genClassInstance:
                     genClassInstance.generate(path,item,values)
-                    pass
-            children = values.get("children")
-            if children:
-                self._generate(os.path.join(path,item), children)
+                    children = values.get("children")
+                    if children:
+                        if genClassInstance.isFolder():
+                            self._generate(os.path.join(path,item), children)
+                        else:
+                            self._generate(path, children)
 
     def generate(self,path):
         self._generate(path, self._arch)

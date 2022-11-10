@@ -20,6 +20,8 @@ from FileVisitorPrintFileCount import *
 from FileVisitorArchJSON import *
 
 from SWComponent import *
+from SWPackage import *
+from SWSubsystem import *
 
 def main():
     
@@ -33,6 +35,8 @@ def main():
     args = parser.parse_args()
 
     archGenTypes = {
+        "SWPackage":SWPackage(),
+        "SWSubsystem":SWSubsystem(),
         "SWComponent":SWComponent()
     }
 

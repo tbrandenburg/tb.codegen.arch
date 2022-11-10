@@ -1,12 +1,31 @@
 {
-    "MyTestComponent1" : {
-        "type": "SWComponent",
+    "MyTestPackage1" : {
+        "type": "SWPackage",
         "children": {
-            "MyTestComponent2" : {
-                "type": "SWComponent"
+            "MyTestSubsystem1" : {
+                "type": "SWSubsystem",
+                "children": {
+                    "MyTestComponent1" : {
+                        "type": "SWComponent"
+                    },
+                    "MyTestComponent2" : {
+                        "type": "SWComponent"
+                    }
+                }
             },
-            "MyTestComponent3" : {
-                "type": "SWComponent"
+            "MyTestSubsystem2" : {
+                "type": "SWSubsystem",
+                "children": {
+                    "MyTestComponent3" : {
+                        "type": "SWComponent"
+                    },
+                    "MyTestComponent4" : {
+                        "type": "SWComponent"
+                    },
+                    "MyTestComponent5" : {
+                        "type": "SWComponent"
+                    }
+                }
             }
         }
     },

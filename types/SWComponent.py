@@ -9,7 +9,7 @@ from ArchGenType import *
 class SWComponent(ArchGenType):
 
     def generate(self,absRootPath,name,content):
-        logging.info("Generating " + name + "...")
+        logging.info("Generating component " + name + "...")
         os.makedirs(os.path.join(absRootPath,name), exist_ok=True)
         os.makedirs(os.path.join(absRootPath,name,"src"), exist_ok=True)
         os.makedirs(os.path.join(absRootPath,name,"api"), exist_ok=True)

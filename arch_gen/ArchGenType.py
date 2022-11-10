@@ -8,3 +8,6 @@ class ArchGenType(ABC):
     @abstractmethod
     def generate(self,absRootPath,name,content):
         pass
+
+    def isFolder(self) -> bool:
+        return True
